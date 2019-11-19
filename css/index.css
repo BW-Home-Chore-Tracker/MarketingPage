@@ -196,14 +196,14 @@ header {
 }
 #headerContainer {
   display: flex;
-  margin-left: 15%;
+  margin-left: 12.5%;
   padding: 2% 0 0;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  width: 70%;
-  border-left: 1px solid red;
-  border-right: 1px solid lightsteelblue;
+  width: 75%;
+  border-left: 4px double rgba(255, 0, 0, 0.3);
+  border-right: 1px solid rgba(100, 100, 255, 0.3);
 }
 #lineContainer {
   display: flex;
@@ -215,12 +215,12 @@ header {
 #bodyContainer {
   display: flex;
   padding: 3% 1% 0;
-  width: 70%;
-  border-left: 1px solid red;
-  border-right: 1px solid lightsteelblue;
+  width: 75%;
+  border-left: 4px double rgba(255, 0, 0, 0.3);
+  border-right: 1px solid rgba(100, 100, 255, 0.3);
 }
 #nav {
-  width: 15%;
+  width: 12.5%;
   display: flex;
   text-align: center;
 }
