@@ -7,12 +7,17 @@
 #bodyContainer section {
   padding-top: 1%;
   text-align: justify;
-
+  @media (max-width:500px) {
+    margin-top: 2%;
+  }
 }  
 
 .about {
   width: 100%;
   text-indent: 5%;
+  @media (max-width:500px) {
+    margin-top: 2%;
+  }
 }
 
 .info {
@@ -20,6 +25,9 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width:500px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .info section {
@@ -27,12 +35,20 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width:500px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 }
 
 .info p,img {
   width: 45%;
   line-height: 2;
   margin-top: 1%;
+  @media (max-width:500px) {
+    width:90%;
+    margin-top: 2%;
+  }
 }
 
 .info span {

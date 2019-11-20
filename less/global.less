@@ -16,12 +16,20 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 3rem;
-  
+  @media (@mobile) {
+    font-size: 2rem;
+    line-height:1.5;
+  }
 }
 
 h2 {
   font-size: 1.5rem;
   line-height: 1.4;
+  width:80%;
+  @media (@mobile) {
+    font-size: 1rem;
+    line-height: 2;
+  }
 }
 
 h4 {
@@ -32,7 +40,9 @@ h4 {
 p {
   line-height: 2.1;
   font-size: 1.2rem;
-  
+  // @media (@mobile) {
+  //   line-height: 1.7;
+  // }
 }
 
 img {
@@ -51,7 +61,6 @@ a {
 body {
   background-color: aliceblue;
   display: flex;
-  height: 100vh;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -59,12 +68,11 @@ body {
 #container {
   display:flex;
   width:1000px;
-  height: 100%;
   align-items: center;
   flex-direction: column;
   background-color: white;
   box-shadow: 0px 0px 5px 0px gray;
-  
+  .mobileView(500px,column,inherit);
 }
 
 header {
@@ -73,6 +81,10 @@ header {
   height: 15%;
   width:1000px;
   background-color: white;
+  .mobileView(500px,column-reverse,center);
+  @media (@mobile) {
+    margin-top:1%;
+  }
 }
 
 #headerContainer {
@@ -84,6 +96,11 @@ header {
   flex-direction: column;
   text-align: center;
   .paperEdgeLines();
+  @media (@mobile) {
+    width:100%;
+    margin-left: 0;
+    border:0;
+  }
 }
 
 #lineContainer {
@@ -92,10 +109,19 @@ header {
   width:100%;
   height:100%;
   background-image: repeating-linear-gradient(white 0px, white 30px, teal 31px);
+  @media (@mobile) {
+    background-image: repeating-linear-gradient(white 0px, white 30px, teal 31px)
+  }
 }
 
 #bodyContainer {
   display: flex;
   padding: 3% 1% 0;
   .paperEdgeLines();
+  @media (@mobile) {
+    width:90%;
+    margin-left: 0;
+    border:0;
+    padding:4% 0 0;
+  }
 }
