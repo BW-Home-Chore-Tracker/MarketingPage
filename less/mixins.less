@@ -1,0 +1,17 @@
+// Mixins in here
+
+.mobileView(@width,@flexDir, @justifyCon) {
+    @media(@mobile) {
+        width:@width;
+        display:flex;
+        flex-direction: @flexDir;
+        //justify-content: @justifyCon;
+        align-items: @justifyCon;
+    }
+}
+
+.paperEdgeLines() {
+    width: 75%;
+    border-left:4px double rgba(255, 0,0,.3);
+    border-right:1px solid rgba(100,100,255, .3);
+}
