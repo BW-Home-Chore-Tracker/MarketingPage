@@ -179,6 +179,9 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
 }
+a:visited {
+  color: grey;
+}
 body {
   background-color: aliceblue;
   display: flex;
@@ -334,9 +337,6 @@ footer a {
     margin: 2% 0 2%;
   }
 }
-a.navButton:visited {
-  color: grey;
-}
 a.navButton:hover {
   background-color: lightsteelblue;
 }
@@ -430,6 +430,11 @@ img {
     margin-top: 0;
   }
   .aboutTeam div {
-    margin: 1% 0 1%;
+    margin: 0 0 1%;
+  }
+}
+@media (max-width:500px) {
+  .aboutFooter {
+    margin-top: 5%;
   }
 }
