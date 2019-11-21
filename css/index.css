@@ -438,3 +438,6 @@ img {
     margin-top: 5%;
   }
 }
+.aboutFooter .hide {
+  display: none;
+}
