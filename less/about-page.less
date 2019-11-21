@@ -1,0 +1,47 @@
+.aboutTeam {
+  width: 100%;
+  margin-top: 2%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    margin:1% 0 1%;
+  }
+
+  img {
+    opacity: .9;
+  }
+
+  a {
+    padding:1%;
+    border-radius: 5px;
+  }
+
+  a:hover {
+    background-color: lightsteelblue;
+  }
+
+  @media (@mobile) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 0;
+    div {
+      margin:1% 0 1%;
+    }
+  }
+}
