@@ -361,6 +361,9 @@ img {
     margin-top: 2%;
   }
 }
+.info img {
+  opacity: 0.85;
+}
 .info span {
   font-weight: bold;
 }
